@@ -1,0 +1,108 @@
+EXPLAIN SELECT /*+INCREMENTAL(c)*/ * FROM page o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_HINTLIST(TOK_HINT(TOK_INCRE)(TOK_HINTARGLIST(c))))(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(2014/3/4-2014/3/4)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_DATE(TOK_STARTTIME(TOK_DATETIME(TOK_DATE(2014)(/)(3)(/)(4)))(TOK_STOPTIME)(TOK_DATETIME(TOK_DATE(2014)(/)(3)(/)(4))))))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(2014/3/4,12:5:20-2014/3/4,12:5:20 )*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_DATE(TOK_STARTTIME(TOK_DATETIME(TOK_DATE(2014)(/)(3)(/)(4))(TOK_TIME(12)(5)(20)))(TOK_STOPTIME)(TOK_DATETIME(TOK_DATE(2014)(/)(3)(/)(4))(TOK_TIME(12)(5)(20))))))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(after 2014/3/4 )*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_DATE(TOK_STARTTIME(TOK_DATETIME(TOK_DATE(2014)(/)(3)(/)(4))))))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(after 2014/3/4,12:5:20 )*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_DATE(TOK_STARTTIME(TOK_DATETIME(TOK_DATE(2014)(/)(3)(/)(4))(TOK_TIME(12)(5)(20))))))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(after 2014/3/4,12:50 )*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_DATE(TOK_STARTTIME(TOK_DATETIME(TOK_DATE(2014)(/)(3)(/)(4))(TOK_TIME(12)(50))))))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(after 2014/3/4 INTERVAL 3/m)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_DATE(TOK_STARTTIME(TOK_DATETIME(TOK_DATE(2014)(/)(3)(/)(4))))(TOK_INTERVAL)(3)(m)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(after 2014/3/4,12:5:20 INTERVAL 3/m)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_DATE(TOK_STARTTIME(TOK_DATETIME(TOK_DATE(2014)(/)(3)(/)(4))(TOK_TIME(12)(5)(20))))(TOK_INTERVAL)(3)(m)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(after 3/4 )*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_DATE(TOK_STARTTIME(TOK_DATETIME(TOK_DATE(3)(/)(4))))))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(after 3/4,11:5:20 )*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_DATE(TOK_STARTTIME(TOK_DATETIME(TOK_DATE(3)(/)(4))(TOK_TIME(11)(5)(20))))))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(after 3/4,11:5:20 INTERVAL 3/m)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_DATE(TOK_STARTTIME(TOK_DATETIME(TOK_DATE(3)(/)(4))(TOK_TIME(11)(5)(20))))(TOK_INTERVAL)(3)(m)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(after 3/4,11:5 INTERVAL 3/m)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_DATE(TOK_STARTTIME(TOK_DATETIME(TOK_DATE(3)(/)(4))(TOK_TIME(11)(5))))(TOK_INTERVAL)(3)(m)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(after 4,11:5 INTERVAL 3/m)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_DATE(TOK_STARTTIME(TOK_DATETIME(TOK_DATE(4))(TOK_TIME(11)(5))))(TOK_INTERVAL)(3)(m)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 100(d))*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(100(d))))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 100(h))*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(100(h))))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 100(m))*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(100(m))))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 100(s))*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(100(s))))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 10(d) INTERVAL 3/d)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(10(d))(TOK_INTERVAL)(3)(d)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 10(d) INTERVAL 3/h)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(10(d))(TOK_INTERVAL)(3)(h)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 10(d) INTERVAL 3/m)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(10(d))(TOK_INTERVAL)(3)(m)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 10(d) INTERVAL 3/s)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(10(d))(TOK_INTERVAL)(3)(s)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 10(h) INTERVAL 3/h)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(10(h))(TOK_INTERVAL)(3)(h)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 10(h) INTERVAL 3/m)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(10(h))(TOK_INTERVAL)(3)(m)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 10(h) INTERVAL 3/s)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(10(h))(TOK_INTERVAL)(3)(s)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 10(m) INTERVAL 3/m)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(10(m))(TOK_INTERVAL)(3)(m)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 10(m) INTERVAL 3/s)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(10(m))(TOK_INTERVAL)(3)(s)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
+EXPLAIN SELECT  * FROM page/*+INCREMENTAL(constant 10(s) INTERVAL 3/s)*/ o JOIN page c ON (o.userid=c.userid)
+Parse Completed
+(nil(TOK_EXPLAIN(TOK_QUERY(TOK_FROM(TOK_JOIN(TOK_TABREF(TOK_TABNAME(page))(TOK_INCRE(TOK_CONSTANT(10(s))(TOK_INTERVAL)(3)(s)))(o))(TOK_TABREF(TOK_TABNAME(page))(c))(=(.(TOK_TABLE_OR_COL(o))(userid))(.(TOK_TABLE_OR_COL(c))(userid)))))(TOK_INSERT(TOK_DESTINATION(TOK_DIR(TOK_TMP_FILE)))(TOK_SELECT(TOK_SELEXPR(TOK_ALLCOLREF))))))(<EOF>))
+--------------------------------------------------------------------------------------
