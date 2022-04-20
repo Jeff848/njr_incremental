@@ -1,0 +1,10 @@
+start test
+text: foo
+start math
+text: 1+2=3
+end math
+start config
+  @file = /foo/bar/config.xml
+end config
+text: bar
+end test
