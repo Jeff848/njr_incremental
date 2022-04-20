@@ -1,0 +1,12 @@
+ CMA-ES warning: File 'CMAEvolutionStrategy.properties' not found, no options read
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.40", dimension=10, 0 diagonal iter., randomSeed=1635872453668 (Tue Nov 02 10:00:53 PDT 2021)
+Iteration,#Fevals: rb Function Value Delta( best ,worst) |idx: Max SD idx: Min SD  | minsigD  sigma Axisratio | time, in eig
+    1(10),     10: 2.3214349460762456e+01 (+0e+00,7e+01) |  7: 1.8e-01  8: 1.7e-01 | 1.8e-01 1.8e-01   1.00   |  0.0  0.0 
+  151(10),   1510: 5.3805314852791360e+00 (-4e-02,4e-01) |  2: 3.0e-02  8: 9.1e-03 | 7.5e-03 2.4e-02   6.48   |  0.1  0.0 
+  301(10),   3010: 1.6195247291204597e+00 (-1e-01,4e-01) |  6: 2.6e-02  0: 9.6e-03 | 3.9e-03 3.3e-02  11.93   |  0.1  0.0 
+  451(10),   4510: 7.8752509214110870e-02 (-2e-02,8e-02) |  9: 2.8e-02  0: 2.7e-03 | 1.3e-03 2.3e-02  28.35   |  0.2  0.0 
+  601(10),   6010: 2.9301387699402520e-07 (-1e-07,5e-07) |  9: 1.6e-04  0: 6.7e-06 | 3.4e-06 1.1e-04  55.50   |  0.2  0.0 
+  728(10),   7281: 9.9205636219265870e-15 (-2e-15,3e-14) |  9: 6.3e-08  1: 2.4e-09 | 1.3e-09 7.4e-08  57.56   |  0.2  0.0 
+Terminated due to
+  Fitness: Objective function value dropped below the target function value 1.0E-14 (iter=728,eval=7280)
+best function value 7.900353451004846E-15 at evaluation 7281
