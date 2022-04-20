@@ -1,0 +1,876 @@
+{"content":"This is a collection of test patterns and examples for org.json."}
+{"list of lists": [
+    [
+        1,
+        2,
+        3
+    ],
+    [
+        4,
+        5,
+        6
+    ]
+]}
+<list of lists><array>1</array><array>2</array><array>3</array></list of lists><list of lists><array>4</array><array>5</array><array>6</array></list of lists>
+{"recipe": {
+    "cook_time": "3 hours",
+    "ingredient": [
+        {
+            "amount": 8,
+            "content": "Flour",
+            "unit": "dL"
+        },
+        {
+            "amount": 10,
+            "content": "Yeast",
+            "unit": "grams"
+        },
+        {
+            "amount": 4,
+            "content": "Water",
+            "state": "warm",
+            "unit": "dL"
+        },
+        {
+            "amount": 1,
+            "content": "Salt",
+            "unit": "teaspoon"
+        }
+    ],
+    "instructions": {"step": [
+        "Mix all ingredients together.",
+        "Knead thoroughly.",
+        "Cover with a cloth, and leave for one hour in warm room.",
+        "Knead again.",
+        "Place in a bread baking tin.",
+        "Cover with a cloth, and leave for one hour in warm room.",
+        "Bake in the oven at 180(degrees)C for 30 minutes."
+    ]},
+    "name": "bread",
+    "prep_time": "5 mins",
+    "title": "Basic bread"
+}}
+
+{"cook_time":"3 hours","prep_time":"5 mins","childNodes":[{"childNodes":["Basic bread"],"tagName":"title"},{"amount":8,"unit":"dL","childNodes":["Flour"],"tagName":"ingredient"},{"amount":10,"unit":"grams","childNodes":["Yeast"],"tagName":"ingredient"},{"amount":4,"unit":"dL","childNodes":["Water"],"state":"warm","tagName":"ingredient"},{"amount":1,"unit":"teaspoon","childNodes":["Salt"],"tagName":"ingredient"},{"childNodes":[{"childNodes":["Mix all ingredients together."],"tagName":"step"},{"childNodes":["Knead thoroughly."],"tagName":"step"},{"childNodes":["Cover with a cloth, and leave for one hour in warm room."],"tagName":"step"},{"childNodes":["Knead again."],"tagName":"step"},{"childNodes":["Place in a bread baking tin."],"tagName":"step"},{"childNodes":["Cover with a cloth, and leave for one hour in warm room."],"tagName":"step"},{"childNodes":["Bake in the oven at 180(degrees)C for 30 minutes."],"tagName":"step"}],"tagName":"instructions"}],"name":"bread","tagName":"recipe"}
+<recipe cook_time="3 hours" prep_time="5 mins" name="bread"><title>Basic bread</title><ingredient amount="8" unit="dL">Flour</ingredient><ingredient amount="10" unit="grams">Yeast</ingredient><ingredient amount="4" unit="dL" state="warm">Water</ingredient><ingredient amount="1" unit="teaspoon">Salt</ingredient><instructions><step>Mix all ingredients together.</step><step>Knead thoroughly.</step><step>Cover with a cloth, and leave for one hour in warm room.</step><step>Knead again.</step><step>Place in a bread baking tin.</step><step>Cover with a cloth, and leave for one hour in warm room.</step><step>Bake in the oven at 180(degrees)C for 30 minutes.</step></instructions></recipe>
+
+[
+    "recipe",
+    {
+        "cook_time": "3 hours",
+        "name": "bread",
+        "prep_time": "5 mins"
+    },
+    [
+        "title",
+        "Basic bread"
+    ],
+    [
+        "ingredient",
+        {
+            "amount": 8,
+            "unit": "dL"
+        },
+        "Flour"
+    ],
+    [
+        "ingredient",
+        {
+            "amount": 10,
+            "unit": "grams"
+        },
+        "Yeast"
+    ],
+    [
+        "ingredient",
+        {
+            "amount": 4,
+            "state": "warm",
+            "unit": "dL"
+        },
+        "Water"
+    ],
+    [
+        "ingredient",
+        {
+            "amount": 1,
+            "unit": "teaspoon"
+        },
+        "Salt"
+    ],
+    [
+        "instructions",
+        [
+            "step",
+            "Mix all ingredients together."
+        ],
+        [
+            "step",
+            "Knead thoroughly."
+        ],
+        [
+            "step",
+            "Cover with a cloth, and leave for one hour in warm room."
+        ],
+        [
+            "step",
+            "Knead again."
+        ],
+        [
+            "step",
+            "Place in a bread baking tin."
+        ],
+        [
+            "step",
+            "Cover with a cloth, and leave for one hour in warm room."
+        ],
+        [
+            "step",
+            "Bake in the oven at 180(degrees)C for 30 minutes."
+        ]
+    ]
+]
+<recipe cook_time="3 hours" prep_time="5 mins" name="bread"><title>Basic bread</title><ingredient amount="8" unit="dL">Flour</ingredient><ingredient amount="10" unit="grams">Yeast</ingredient><ingredient amount="4" unit="dL" state="warm">Water</ingredient><ingredient amount="1" unit="teaspoon">Salt</ingredient><instructions><step>Mix all ingredients together.</step><step>Knead thoroughly.</step><step>Cover with a cloth, and leave for one hour in warm room.</step><step>Knead again.</step><step>Place in a bread baking tin.</step><step>Cover with a cloth, and leave for one hour in warm room.</step><step>Bake in the oven at 180(degrees)C for 30 minutes.</step></instructions></recipe>
+
+{
+    "childNodes": [
+        {
+            "childNodes": [
+                "JSONML is a transformation between",
+                {
+                    "childNodes": ["JSON"],
+                    "tagName": "b"
+                },
+                "and",
+                {
+                    "childNodes": ["XML"],
+                    "tagName": "b"
+                },
+                "that preserves ordering of document features."
+            ],
+            "tagName": "p"
+        },
+        {
+            "childNodes": ["JSONML can work with JSON arrays or JSON objects."],
+            "tagName": "p"
+        },
+        {
+            "childNodes": [
+                "Three",
+                {"tagName": "br"},
+                "little",
+                {"tagName": "br"},
+                "words"
+            ],
+            "tagName": "p"
+        }
+    ],
+    "class": "JSONML",
+    "id": "demo",
+    "tagName": "div"
+}
+<div id="demo" class="JSONML"><p>JSONML is a transformation between<b>JSON</b>and<b>XML</b>that preserves ordering of document features.</p><p>JSONML can work with JSON arrays or JSON objects.</p><p>Three<br/>little<br/>words</p></div>
+
+[
+    "div",
+    {
+        "class": "JSONML",
+        "id": "demo"
+    },
+    [
+        "p",
+        "JSONML is a transformation between",
+        [
+            "b",
+            "JSON"
+        ],
+        "and",
+        [
+            "b",
+            "XML"
+        ],
+        "that preserves ordering of document features."
+    ],
+    [
+        "p",
+        "JSONML can work with JSON arrays or JSON objects."
+    ],
+    [
+        "p",
+        "Three",
+        ["br"],
+        "little",
+        ["br"],
+        "words"
+    ]
+]
+<div id="demo" class="JSONML"><p>JSONML is a transformation between<b>JSON</b>and<b>XML</b>that preserves ordering of document features.</p><p>JSONML can work with JSON arrays or JSON objects.</p><p>Three<br/>little<br/>words</p></div>
+
+{"person": {
+    "address": {
+        "city": "Anytown",
+        "postalCode": "98765-4321",
+        "state": "CA",
+        "street": "12345 Sixth Ave",
+        "type": "home"
+    },
+    "created": "2006-11-11T19:23",
+    "firstName": "Robert",
+    "lastName": "Smith",
+    "modified": "2006-12-31T23:59"
+}}
+{"number":42,"boolean":true,"string":"A beany object","BENT":"All uppercase key","x":"x"}
+{"entity": {
+  "averageRating": null,
+  "id": 12336,
+  "imageURL": "",
+  "name": "IXXXXXXXXXXXXX",
+  "ratingCount": null
+}}
+{"single":"MARIE HAA'S","Johnny":"MARIE HAA\\'S","foo":"bar","baz":[{"quux":"Thanks, Josh!"}],"obj keys":["aString","aNumber","aBoolean"]}
+{"a":[[["b"]]]}
+[1,[null,[{"empty-array":[],"answer":42,"null":null,"false":false,"true":true,"big":1.23456789E96,"small":1.23456789E-80,"empty-object":{},"long":9223372036854775807},"two"],true],98.6,-100,{},{"one":1},{"A beany object":42}]
+[
+    1,
+    [
+        null,
+        [
+            {
+                "answer": 42,
+                "big": 1.23456789E96,
+                "empty-array": [],
+                "empty-object": {},
+                "false": false,
+                "long": 9223372036854775807,
+                "null": null,
+                "small": 1.23456789E-80,
+                "true": true
+            },
+            "two"
+        ],
+        true
+    ],
+    98.6,
+    -100,
+    {},
+    {"one": 1},
+    {"A beany object": 42}
+]
+[1,2,3]
+{
+    "Testing JSONString interface": {"A beany object":42},
+    "aBoolean": true,
+    "aNumber": 42,
+    "aString": "A beany object"
+}
+{
+  "backslash": "\\",
+  "closetag": "<\/script>",
+  "ei": {"quotes": "\"'"},
+  "eo": {
+    "a": "\"quoted\"",
+    "b": "don't"
+  },
+  "quotes": [
+    "'",
+    "\""
+  ],
+  "slashes": "///"
+}
+<closetag>&lt;/script&gt;</closetag><ei><quotes>&quot;'</quotes></ei><eo><a>&quot;quoted&quot;</a><b>don't</b></eo><backslash>\</backslash><slashes>///</slashes><quotes>'</quotes><quotes>&quot;</quotes>
+
+{
+    "JSONArray": [],
+    "JSONObject": {},
+    "String": "98.6",
+    "\\u2028": "\u2028",
+    "\\u2029": "\u2029",
+    "bool": "true",
+    "double": 1.2345678901234568E29,
+    "false": false,
+    "foo": [
+        true,
+        false,
+        9876543210,
+        0,
+        1.00000001,
+        1.000000000001,
+        1,
+        1.0E-17,
+        2,
+        0.1,
+        2.0E100,
+        -32,
+        [],
+        {},
+        "string",
+        666,
+        2001.99,
+        "so \"fine\".",
+        "so <fine>.",
+        true,
+        false,
+        [],
+        {}
+    ],
+    "int": 57,
+    "keys": [
+        "op",
+        "bool",
+        "double",
+        "foo",
+        "JSONArray",
+        "false",
+        "String",
+        "int",
+        "zero",
+        "JSONObject",
+        "null",
+        "true",
+        "\\u2029",
+        "to",
+        "\\u2028",
+        "ten"
+    ],
+    "null": null,
+    "op": "Good",
+    "ten": 10,
+    "to": null,
+    "true": true,
+    "zero": -0
+}
+<op>Good</op><bool>true</bool><double>1.2345678901234568E29</double><keys>[Ljava.lang.String;@58134517</keys><foo>true</foo><foo>false</foo><foo>9876543210</foo><foo>0.0</foo><foo>1.00000001</foo><foo>1.000000000001</foo><foo>1.0</foo><foo>1.0E-17</foo><foo>2.0</foo><foo>0.1</foo><foo>2.0E100</foo><foo>-32</foo><foo></foo><foo></foo><foo>string</foo><foo>666</foo><foo>2001.99</foo><foo>so &quot;fine&quot;.</foo><foo>so &lt;fine&gt;.</foo><foo>true</foo><foo>false</foo><foo></foo><foo></foo><false>false</false><String>98.6</String><int>57</int><zero>-0.0</zero><JSONObject></JSONObject><null>null</null><true>true</true><\u2029>?</\u2029><to>null</to><\u2028>?</\u2028><ten>10</ten>
+String: 98.6
+  bool: true
+    to: null
+  true: true
+   foo: [true,false,9876543210,0,1.00000001,1.000000000001,1,1.0E-17,2,0.1,2.0E100,-32,[],{},"string",666,2001.99,"so \"fine\".","so <fine>.",true,false,[],{}]
+    op: Good
+   ten: 10
+  oops: false
+{"xml": {
+  "content": [
+    "First \t<content>",
+    "This is \"content\".",
+    "JSON does not preserve the sequencing of elements and contents.",
+    "Content text is an implied structure in XML.",
+    "JSON does not have implied structure:",
+    "everything is explicit.",
+    "CDATA blocks<are><supported>!"
+  ],
+  "five": [
+    "",
+    ""
+  ],
+  "four": {},
+  "one": 1,
+  "seven": 7,
+  "six": {"content": 6},
+  "three": [
+    3,
+    "III",
+    "T H R E E"
+  ],
+  "two": " \"2\" "
+}}
+<xml><six>6</six><four></four><one>1</one><seven>7</seven><two> &quot;2&quot; </two><five/><five/><three>3</three><three>III</three><three>T H R E E</three>First 	&lt;content&gt;
+This is &quot;content&quot;.
+JSON does not preserve the sequencing of elements and contents.
+Content text is an implied structure in XML.
+JSON does not have implied structure:
+everything is explicit.
+CDATA blocks&lt;are&gt;&lt;supported&gt;!</xml>
+
+[
+    "xml",
+    {
+        "one": 1,
+        "two": " \"2\" "
+    },
+    ["five"],
+    "First \t<content>",
+    ["five"],
+    "This is \"content\".",
+    [
+        "three",
+        3
+    ],
+    "JSON does not preserve the sequencing of elements and contents.",
+    [
+        "three",
+        "III"
+    ],
+    [
+        "three",
+        "T H R E E"
+    ],
+    ["four"],
+    "Content text is an implied structure in XML.",
+    [
+        "six",
+        {"content": 6}
+    ],
+    "JSON does not have implied structure:",
+    [
+        "seven",
+        7
+    ],
+    "everything is explicit.",
+    "CDATA blocks<are><supported>!"
+]
+<xml one="1" two=" &quot;2&quot; "><five/>First 	&lt;content&gt;<five/>This is &quot;content&quot;.<three></three>JSON does not preserve the sequencing of elements and contents.<three>III</three><three>T H R E E</three><four/>Content text is an implied structure in XML.<six content="6"/>JSON does not have implied structure:<seven></seven>everything is explicit.CDATA blocks&lt;are&gt;&lt;supported&gt;!</xml>
+
+[
+    "xml",
+    {"do": 0},
+    "uno",
+    [
+        "a",
+        {
+            "mi": 2,
+            "re": 1
+        },
+        "dos",
+        [
+            "b",
+            {"fa": 3}
+        ],
+        "tres",
+        [
+            "c",
+            true
+        ],
+        "quatro"
+    ],
+    "cinqo",
+    [
+        "d",
+        "seis",
+        ["e"]
+    ]
+]
+<xml do="0">uno<a re="1" mi="2">dos<b fa="3"/>tres<c></c>quatro</a>cinqo<d>seis<e/></d></xml>
+
+{"mapping": {
+  "class": [
+    {
+      "field": [
+        {
+          "bind-xml": {
+            "name": "ID",
+            "node": "attribute"
+          },
+          "name": "ID",
+          "type": "string"
+        },
+        {
+          "name": "FirstName",
+          "type": "FirstName"
+        },
+        {
+          "name": "MI",
+          "type": "MI"
+        },
+        {
+          "name": "LastName",
+          "type": "LastName"
+        }
+      ],
+      "name": "Customer"
+    },
+    {
+      "field": {
+        "bind-xml": {
+          "name": "text",
+          "node": "text"
+        },
+        "name": "text"
+      },
+      "name": "FirstName"
+    },
+    {
+      "field": {
+        "bind-xml": {
+          "name": "text",
+          "node": "text"
+        },
+        "name": "text"
+      },
+      "name": "MI"
+    },
+    {
+      "field": {
+        "bind-xml": {
+          "name": "text",
+          "node": "text"
+        },
+        "name": "text"
+      },
+      "name": "LastName"
+    }
+  ],
+  "empty": {}
+}}
+<mapping><class><field><name>ID</name><bind-xml><node>attribute</node><name>ID</name></bind-xml><type>string</type></field><field><name>FirstName</name><type>FirstName</type></field><field><name>MI</name><type>MI</type></field><field><name>LastName</name><type>LastName</type></field><name>Customer</name></class><class><field><name>text</name><bind-xml><node>text</node><name>text</name></bind-xml></field><name>FirstName</name></class><class><field><name>text</name><bind-xml><node>text</node><name>text</name></bind-xml></field><name>MI</name></class><class><field><name>text</name><bind-xml><node>text</node><name>text</name></bind-xml></field><name>LastName</name></class><empty></empty></mapping>
+
+[
+    "mapping",
+    ["empty"],
+    [
+        "class",
+        {"name": "Customer"},
+        [
+            "field",
+            {
+                "name": "ID",
+                "type": "string"
+            },
+            [
+                "bind-xml",
+                {
+                    "name": "ID",
+                    "node": "attribute"
+                }
+            ]
+        ],
+        [
+            "field",
+            {
+                "name": "FirstName",
+                "type": "FirstName"
+            }
+        ],
+        [
+            "field",
+            {
+                "name": "MI",
+                "type": "MI"
+            }
+        ],
+        [
+            "field",
+            {
+                "name": "LastName",
+                "type": "LastName"
+            }
+        ]
+    ],
+    [
+        "class",
+        {"name": "FirstName"},
+        [
+            "field",
+            {"name": "text"},
+            [
+                "bind-xml",
+                {
+                    "name": "text",
+                    "node": "text"
+                }
+            ]
+        ]
+    ],
+    [
+        "class",
+        {"name": "MI"},
+        [
+            "field",
+            {"name": "text"},
+            [
+                "bind-xml",
+                {
+                    "name": "text",
+                    "node": "text"
+                }
+            ]
+        ]
+    ],
+    [
+        "class",
+        {"name": "LastName"},
+        [
+            "field",
+            {"name": "text"},
+            [
+                "bind-xml",
+                {
+                    "name": "text",
+                    "node": "text"
+                }
+            ]
+        ]
+    ]
+]
+<mapping><empty/><class name="Customer"><field name="ID" type="string"><bind-xml node="attribute" name="ID"/></field><field name="FirstName" type="FirstName"/><field name="MI" type="MI"/><field name="LastName" type="LastName"/></class><class name="FirstName"><field name="text"><bind-xml node="text" name="text"/></field></class><class name="MI"><field name="text"><bind-xml node="text" name="text"/></field></class><class name="LastName"><field name="text"><bind-xml node="text" name="text"/></field></class></mapping>
+
+{"Book": {
+  "Author": "Anonymous",
+  "Chapter": [
+    {
+      "content": "This is chapter 1. It is not very long or interesting.",
+      "id": 1
+    },
+    {
+      "content": "This is chapter 2. Although it is longer than chapter 1, it is not any more interesting.",
+      "id": 2
+    }
+  ],
+  "Title": "Sample Book"
+}}
+<Book><Chapter><id>1</id>This is chapter 1. It is not very long or interesting.</Chapter><Chapter><id>2</id>This is chapter 2. Although it is longer than chapter 1, it is not any more interesting.</Chapter><Author>Anonymous</Author><Title>Sample Book</Title></Book>
+
+{"bCard": {"bCard": [
+  {
+    "company": "MCI",
+    "email": "khare@mci.net",
+    "firstname": "Rohit",
+    "homepage": "http://pest.w3.org/",
+    "lastname": "Khare"
+  },
+  {
+    "company": "Caltech Infospheres Project",
+    "email": "adam@cs.caltech.edu",
+    "firstname": "Adam",
+    "homepage": "http://www.cs.caltech.edu/~adam/",
+    "lastname": "Rifkin"
+  }
+]}}
+<bCard><bCard><firstname>Rohit</firstname><company>MCI</company><email>khare@mci.net</email><lastname>Khare</lastname><homepage>http://pest.w3.org/</homepage></bCard><bCard><firstname>Adam</firstname><company>Caltech Infospheres Project</company><email>adam@cs.caltech.edu</email><lastname>Rifkin</lastname><homepage>http://www.cs.caltech.edu/~adam/</homepage></bCard></bCard>
+
+{"customer": {
+  "ID": "fbs0001",
+  "MI": {"text": "B"},
+  "firstName": {"text": "Fred"},
+  "lastName": {"text": "Scerbo"}
+}}
+<customer><firstName><text>Fred</text></firstName><lastName><text>Scerbo</text></lastName><ID>fbs0001</ID><MI><text>B</text></MI></customer>
+
+{"list":{"head":"Repository Address","item":["Special Collections Library","ABC University","Main Library, 40 Circle Drive","Ourtown, Pennsylvania","17654 USA"],"type":"simple"}}
+<list><head>Repository Address</head><item>Special Collections Library</item><item>ABC University</item><item>Main Library, 40 Circle Drive</item><item>Ourtown, Pennsylvania</item><item>17654 USA</item><type>simple</type></list>
+
+{"test": {
+  "blip": {
+    "content": "&\"toot\"&toot;&#x41;",
+    "sweet": true
+  },
+  "content": "deluxe",
+  "empty": {},
+  "intertag": "",
+  "status": "ok",
+  "w": [
+    "bonus",
+    "bonus2"
+  ],
+  "x": "eks"
+}}
+<test><intertag/><w>bonus</w><w>bonus2</w><x>eks</x>deluxe<status>ok</status><empty></empty><blip><sweet>true</sweet>&amp;&quot;toot&quot;&amp;toot;&amp;#x41;</blip></test>
+
+{
+  "Accept": "image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-powerpoint, application/vnd.ms-excel, application/msword, */*",
+  "Accept-Language": "en-us",
+  "Accept-encoding": "gzip, deflate",
+  "Connection": "keep-alive",
+  "HTTP-Version": "HTTP/1.0",
+  "Host": "www.nokko.com",
+  "Method": "GET",
+  "Request-URI": "/",
+  "User-Agent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90; T312461; Q312461)"
+}
+GET "/" HTTP/1.0
+Accept-encoding: gzip, deflate
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-powerpoint, application/vnd.ms-excel, application/msword, */*
+User-Agent: Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90; T312461; Q312461)
+Connection: keep-alive
+Host: www.nokko.com
+Accept-Language: en-us
+
+
+
+{
+  "Connection": "Keep-Alive",
+  "Content-Type": "text/html",
+  "Date": "Sun, 26 May 2002 17:38:52 GMT",
+  "HTTP-Version": "HTTP/1.1",
+  "Keep-Alive": "timeout=15, max=100",
+  "Reason-Phrase": "Oki Doki",
+  "Server": "Apache/1.3.23 (Unix) mod_perl/1.26",
+  "Status-Code": "200",
+  "Transfer-Encoding": "chunked"
+}
+HTTP/1.1 200 Oki Doki
+Keep-Alive: timeout=15, max=100
+Transfer-Encoding: chunked
+Server: Apache/1.3.23 (Unix) mod_perl/1.26
+Connection: Keep-Alive
+Date: Sun, 26 May 2002 17:38:52 GMT
+Content-Type: text/html
+
+
+
+{
+  "HTTP-Version": "HTTP/1.0",
+  "Method": "GET",
+  "Request-URI": "/",
+  "nix": null,
+  "null": "null",
+  "nux": false
+}
+isNull: true
+   has: true
+<nux>false</nux><null>null</null><Request-URI>/</Request-URI><Method>GET</Method><nix>null</nix><HTTP-Version>HTTP/1.0</HTTP-Version>
+GET "/" HTTP/1.0
+nux: false
+null: null
+
+
+
+{"SOAP-ENV:Envelope": {
+  "SOAP-ENV:Body": {"ns1:doGoogleSearch": {
+    "SOAP-ENV:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+    "filter": {
+      "content": true,
+      "xsi:type": "xsd:boolean"
+    },
+    "ie": {
+      "content": "latin1",
+      "xsi:type": "xsd:string"
+    },
+    "key": {
+      "content": "GOOGLEKEY",
+      "xsi:type": "xsd:string"
+    },
+    "lr": {"xsi:type": "xsd:string"},
+    "maxResults": {
+      "content": 10,
+      "xsi:type": "xsd:int"
+    },
+    "oe": {
+      "content": "latin1",
+      "xsi:type": "xsd:string"
+    },
+    "q": {
+      "content": "'+search+'",
+      "xsi:type": "xsd:string"
+    },
+    "restrict": {"xsi:type": "xsd:string"},
+    "safeSearch": {
+      "content": false,
+      "xsi:type": "xsd:boolean"
+    },
+    "start": {
+      "content": 0,
+      "xsi:type": "xsd:int"
+    },
+    "xmlns:ns1": "urn:GoogleSearch"
+  }},
+  "xmlns:SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+  "xmlns:xsd": "http://www.w3.org/1999/XMLSchema",
+  "xmlns:xsi": "http://www.w3.org/1999/XMLSchema-instance"
+}}
+<SOAP-ENV:Envelope><xmlns:xsd>http://www.w3.org/1999/XMLSchema</xmlns:xsd><xmlns:SOAP-ENV>http://schemas.xmlsoap.org/soap/envelope/</xmlns:SOAP-ENV><SOAP-ENV:Body><ns1:doGoogleSearch><filter><xsi:type>xsd:boolean</xsi:type>true</filter><q><xsi:type>xsd:string</xsi:type>'+search+'</q><xmlns:ns1>urn:GoogleSearch</xmlns:ns1><SOAP-ENV:encodingStyle>http://schemas.xmlsoap.org/soap/encoding/</SOAP-ENV:encodingStyle><maxResults><xsi:type>xsd:int</xsi:type>10</maxResults><lr><xsi:type>xsd:string</xsi:type></lr><oe><xsi:type>xsd:string</xsi:type>latin1</oe><start><xsi:type>xsd:int</xsi:type>0</start><restrict><xsi:type>xsd:string</xsi:type></restrict><ie><xsi:type>xsd:string</xsi:type>latin1</ie><safeSearch><xsi:type>xsd:boolean</xsi:type>false</safeSearch><key><xsi:type>xsd:string</xsi:type>GOOGLEKEY</key></ns1:doGoogleSearch></SOAP-ENV:Body><xmlns:xsi>http://www.w3.org/1999/XMLSchema-instance</xmlns:xsi></SOAP-ENV:Envelope>
+
+{"Envelope": {"Body": {"ns1:doGoogleSearch": {
+  "SOAP-ENV:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+  "filter": true,
+  "ie": "latin1",
+  "key": "GOOGLEKEY",
+  "maxResults": 10,
+  "oe": "latin1",
+  "q": "'+search+'",
+  "safeSearch": false,
+  "start": 0,
+  "xmlns:ns1": "urn:GoogleSearch"
+}}}}
+<Envelope><Body><ns1:doGoogleSearch><filter>true</filter><q>'+search+'</q><xmlns:ns1>urn:GoogleSearch</xmlns:ns1><oe>latin1</oe><maxResults>10</maxResults><SOAP-ENV:encodingStyle>http://schemas.xmlsoap.org/soap/encoding/</SOAP-ENV:encodingStyle><start>0</start><ie>latin1</ie><safeSearch>false</safeSearch><key>GOOGLEKEY</key></ns1:doGoogleSearch></Body></Envelope>
+
+{
+  "f%oo": "b l=ah",
+  "o;n@e": "t.wo"
+}
+f%25oo=b l%3dah;o%3bn@e=t.wo
+
+{
+  "expires": "April 24, 2002",
+  "name": "f%oo",
+  "secure": true,
+  "value": "blah"
+}
+f%25oo=blah;expires=April 24, 2002;secure
+
+{"script":"It is not allowed in HTML to send a close script tag in a string<script>because it confuses browsers<\/script>so we insert a backslash before the /"}
+
+{"op":"test","pre":1,"to":"session"}
+pre: 1
+123
+{"op":"test","pre":2,"to":"session"}
+
+Double Quotes,No quotes,Single Quotes
+3,1,2
+
+
+[{
+    "Double Quotes": "3",
+    "No quotes": "1",
+    "Single Quotes": "2"
+}]
+
+["<escape>","next is an implied null",null,"ok"]
+
+<array>&lt;escape&gt;</array><array>next is an implied null</array><array>null</array><array>ok</array>
+
+{
+    "+": 6.0E66,
+    "[true]": [[
+        "!",
+        "@",
+        "*"
+    ]],
+    "dec": 666,
+    "double": 0.666,
+    "empty": "",
+    "false": false,
+    "forgiving": "This package can be used to parse formats that are similar to but not stricting conforming to JSON",
+    "fun": "with non-standard forms",
+    "hex": 1638,
+    "noh": "0x0x",
+    "null": null,
+    "o": 999,
+    "oct": 438,
+    "one": [[1]],
+    "pluses": "+++",
+    "string": "o. k.",
+    "true": true,
+    "uno": [[{"1": 1}]],
+    "why": "To make it easier to migrate existing data to JSON"
+}
+
+It's all good
+
+{
+    "dec": 666,
+    "hex": 1638,
+    "oct": 438
+}
+
+[["<escape>","next is an implied null",null,"ok"],{"oct":438,"dec":666,"hex":1638}]
+{
+    "double": 9.223372036854776E18,
+    "int": 2147483647,
+    "long": 2147483648,
+    "longer": 9223372036854775807,
+    "string": "98.6"
+}
+
+getInt
+int    2147483647
+long   -2147483648
+longer -1
+double 2147483647
+string 98
+
+getLong
+int    2147483647
+long   2147483648
+longer 9223372036854775807
+double 9223372036854775807
+java.lang.NumberFormatException: For input string: "98.6"
