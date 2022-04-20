@@ -1,0 +1,11 @@
+<project default="build-jar">
+    <target name="build-jar">
+        <jar destfile="awsprofiler.jar">
+            <fileset dir="classes"/>
+            <fileset dir="lib"/>
+            <manifest>
+				<attribute name="Main-Class" value="pl.cc.core.cmd.Command"/>
+            </manifest> 
+        </jar>
+    </target>
+</project>
