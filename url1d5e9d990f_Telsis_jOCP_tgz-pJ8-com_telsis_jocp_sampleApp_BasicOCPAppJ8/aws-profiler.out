@@ -1,0 +1,82 @@
+0 [main] INFO ocpSystemManager  - Link(null) changed from null to DISCONNECTED
+4 [main] WARN ocpLinkManager  - loadConfig link 0
+4531 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+4535 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+4536 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {s}->https://codeguru-profiler.us-west-2.amazonaws.com:443][total available: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+4545 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {s}->https://codeguru-profiler.us-west-2.amazonaws.com:443][total available: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+4547 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.impl.execchain.MainClientExec  - Opening connection {s}->https://codeguru-profiler.us-west-2.amazonaws.com:443
+4549 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connecting to codeguru-profiler.us-west-2.amazonaws.com/52.85.193.2:443
+4549 [Amazon-Profiler] DEBUG codegurushadow.software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory  - Connecting socket to codeguru-profiler.us-west-2.amazonaws.com/52.85.193.2:443 with timeout 2000
+4602 [Amazon-Profiler] DEBUG codegurushadow.software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory  - Enabled protocols: [TLSv1.3, TLSv1.2]
+4602 [Amazon-Profiler] DEBUG codegurushadow.software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory  - Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+4604 [Amazon-Profiler] DEBUG codegurushadow.software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory  - Starting handshake
+4663 [OCPSystemManager.SystemThread] INFO ocpLinkManager  - changeLinkState: changed from DISCONNECTED to CONNECTING
+4788 [Amazon-Profiler] DEBUG codegurushadow.software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory  - Secure session established
+4788 [Amazon-Profiler] DEBUG codegurushadow.software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory  -  negotiated protocol: TLSv1.3
+4788 [Amazon-Profiler] DEBUG codegurushadow.software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory  -  negotiated cipher suite: TLS_AES_128_GCM_SHA256
+4788 [Amazon-Profiler] DEBUG codegurushadow.software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory  -  peer principal: CN=codeguru-profiler.us-west-2.amazonaws.com
+4788 [Amazon-Profiler] DEBUG codegurushadow.software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory  -  peer alternative names: [codeguru-profiler.us-west-2.amazonaws.com, *.codeguru-profiler.us-west-2.amazonaws.com]
+4789 [Amazon-Profiler] DEBUG codegurushadow.software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory  -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+4792 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connection established 192.168.1.119:50324<->52.85.193.2:443
+4792 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 30000
+4792 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.impl.execchain.MainClientExec  - Executing request POST /profilingGroups/url1d5e9d990fTelsisjOCPtgz-pJ8-comtelsisjocpsampleAppBasicOCPAppJ8/configureAgent HTTP/1.1
+4792 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+4793 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 >> POST /profilingGroups/url1d5e9d990fTelsisjOCPtgz-pJ8-comtelsisjocpsampleAppBasicOCPAppJ8/configureAgent HTTP/1.1
+4793 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 >> Host: codeguru-profiler.us-west-2.amazonaws.com
+4793 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 >> amz-sdk-invocation-id: cdd7a586-b0a6-226b-6509-bf729d4ac8ad
+4793 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 >> amz-sdk-request: attempt=1; max=3
+4793 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=AKIAY7TKXWBE4DJJQTKM/20211102/us-west-2/codeguru-profiler/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=9ac213b56c28f32bf9f9d68caf9721d267d8f6307578c458e72c05675f5043ec
+4793 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/x-amz-json-1.1
+4793 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 >> User-Agent: aws-sdk-java/2.17.1 Windows_10/10.0 Java_HotSpot_TM__64-Bit_Server_VM/17.0.1+12-LTS-39 Java/17.0.1 codegurushadow.kotlin vendor/Oracle_Corporation md/internal io/sync http/Apache cfg/retry-mode/legacy
+4793 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 >> X-Amz-Date: 20211102T170033Z
+4793 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 >> Content-Length: 58
+4794 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+4794 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 >> "POST /profilingGroups/url1d5e9d990fTelsisjOCPtgz-pJ8-comtelsisjocpsampleAppBasicOCPAppJ8/configureAgent HTTP/1.1[\r][\n]"
+4794 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 >> "Host: codeguru-profiler.us-west-2.amazonaws.com[\r][\n]"
+4794 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 >> "amz-sdk-invocation-id: cdd7a586-b0a6-226b-6509-bf729d4ac8ad[\r][\n]"
+4794 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 >> "amz-sdk-request: attempt=1; max=3[\r][\n]"
+4794 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=AKIAY7TKXWBE4DJJQTKM/20211102/us-west-2/codeguru-profiler/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=9ac213b56c28f32bf9f9d68caf9721d267d8f6307578c458e72c05675f5043ec[\r][\n]"
+4794 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/x-amz-json-1.1[\r][\n]"
+4794 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 >> "User-Agent: aws-sdk-java/2.17.1 Windows_10/10.0 Java_HotSpot_TM__64-Bit_Server_VM/17.0.1+12-LTS-39 Java/17.0.1 codegurushadow.kotlin vendor/Oracle_Corporation md/internal io/sync http/Apache cfg/retry-mode/legacy[\r][\n]"
+4794 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 >> "X-Amz-Date: 20211102T170033Z[\r][\n]"
+4794 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 58[\r][\n]"
+4794 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+4794 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+4794 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 >> "{"fleetInstanceId":"41724768-93b1-4b2d-8df1-cc2521ba4777"}"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "Content-Length: 249[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "Date: Tue, 02 Nov 2021 17:00:33 GMT[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "x-amzn-RequestId: 94c03ffb-326a-46fd-862f-8cf443dd419d[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "access-control-allow-origin: *[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "access-control-allow-headers: content-type[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "x-amz-apigw-id: IL47zEchPHcF4ug=[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS, TRACE, PATCH, PURGE, HEAD[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "X-Amzn-Trace-Id: Root=1-61816eb1-1c4085b337105c3f7f7fe0a9[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "X-Cache: Miss from cloudfront[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "Via: 1.1 f877ee79a0f8fd4e0f5c08d722425c50.cloudfront.net (CloudFront)[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "X-Amz-Cf-Pop: LAX50-C4[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "X-Amz-Cf-Id: tY6-sUryEy2ANGLfOqWQC5N6oyVH5r9OcgS6AE4g2f-OHbMNpNQOww==[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+4963 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.wire  - http-outgoing-0 << "{"agentParameters":{"SamplingIntervalInMilliseconds":"1000","ReportingIntervalInMilliseconds":"300000","MinimumTimeForReportingInMilliseconds":"60000","MemoryUsageLimitPercent":"10","MaxStackDepth":"1000"},"periodInSeconds":300,"shouldProfile":true}"
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << Content-Length: 249
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << Connection: keep-alive
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << Date: Tue, 02 Nov 2021 17:00:33 GMT
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << x-amzn-RequestId: 94c03ffb-326a-46fd-862f-8cf443dd419d
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << access-control-allow-origin: *
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << access-control-allow-headers: content-type
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << x-amz-apigw-id: IL47zEchPHcF4ug=
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS, TRACE, PATCH, PURGE, HEAD
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << X-Amzn-Trace-Id: Root=1-61816eb1-1c4085b337105c3f7f7fe0a9
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << X-Cache: Miss from cloudfront
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << Via: 1.1 f877ee79a0f8fd4e0f5c08d722425c50.cloudfront.net (CloudFront)
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << X-Amz-Cf-Pop: LAX50-C4
+4966 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.headers  - http-outgoing-0 << X-Amz-Cf-Id: tY6-sUryEy2ANGLfOqWQC5N6oyVH5r9OcgS6AE4g2f-OHbMNpNQOww==
+4969 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive for 60000 MILLISECONDS
+5004 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {s}->https://codeguru-profiler.us-west-2.amazonaws.com:443] can be kept alive for 60.0 seconds
+5004 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 0
+5004 [Amazon-Profiler] DEBUG codegurushadow.org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {s}->https://codeguru-profiler.us-west-2.amazonaws.com:443][total available: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+5611 [main] FATAL com.telsis.jocp.sampleApp.BasicOCPApp  - No link was available
